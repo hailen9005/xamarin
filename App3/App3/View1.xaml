@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="App3.View1">
+    <ContentView.Resources>
+        <ResourceDictionary >
+            <ControlTemplate x:Key="MTemp">
+                <AbsoluteLayout >
+                    <BoxView Grid.Column="0" AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" HorizontalOptions="Center" Color="#444"></BoxView>
+                    <Grid AbsoluteLayout.LayoutBounds="1,1,1,1" AbsoluteLayout.LayoutFlags="All" >
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"></RowDefinition>
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="70"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+                        <BoxView Grid.Column="0" HorizontalOptions="Center" Color="#404"></BoxView>
+                        <BoxView Grid.Column="1" HorizontalOptions="Center" Color="#404"></BoxView>
+                        <BoxView Grid.Column="2" HorizontalOptions="Center" Color="#404"></BoxView>
+                        <BoxView Grid.Column="3" HorizontalOptions="Center" Color="#404"></BoxView>
+                    </Grid>
+                </AbsoluteLayout>
+            </ControlTemplate>
+        </ResourceDictionary>
+    </ContentView.Resources>
+  <ContentView.Content>
+      <ContentView ControlTemplate="{StaticResource MTemp}" BackgroundColor="#040" WidthRequest="200" HeightRequest="200" HorizontalOptions="Center" VerticalOptions="Center">
+            
+      </ContentView>
+  </ContentView.Content>
+</ContentView>
